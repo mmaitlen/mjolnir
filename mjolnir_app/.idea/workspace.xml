@@ -18,14 +18,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="content_table_mgr.dart" pinned="false" current-in-tab="true">
+      <file leaf-file-name="content_table_mgr.dart" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/domain/content_table_mgr.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="395">
-              <caret line="32" column="67" lean-forward="false" selection-start-line="32" selection-start-column="67" selection-end-line="32" selection-end-column="67" />
+            <state relative-caret-position="420">
+              <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="list.dart" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../../flutter/bin/cache/pkg/sky_engine/lib/core/list.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4605">
+              <caret line="309" column="10" lean-forward="false" selection-start-line="309" selection-start-column="10" selection-end-line="309" selection-end-column="10" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -40,14 +50,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="content_mgr_test.dart" pinned="false" current-in-tab="false">
+      <file leaf-file-name="content_mgr_test.dart" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/content_mgr_test.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="33" column="45" lean-forward="false" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
+            <state relative-caret-position="150">
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pubspec.yaml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pubspec.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="21" lean-forward="false" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -109,7 +129,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/test/widget_test.dart" />
-        <option value="$PROJECT_DIR$/pubspec.yaml" />
         <option value="$PROJECT_DIR$/lib/data_obj.dart" />
         <option value="$PROJECT_DIR$/lib/content.dart" />
         <option value="$PROJECT_DIR$/lib/content_mgr.dart" />
@@ -124,12 +143,13 @@
         <option value="$PROJECT_DIR$/test/content_table_test.dart" />
         <option value="$PROJECT_DIR$/lib/dataobj/content.dart" />
         <option value="$PROJECT_DIR$/lib/dataobj/data_obj.dart" />
-        <option value="$PROJECT_DIR$/test/content_mgr_test.dart" />
+        <option value="$PROJECT_DIR$/pubspec.yaml" />
         <option value="$PROJECT_DIR$/lib/domain/content_table_mgr.dart" />
+        <option value="$PROJECT_DIR$/test/content_mgr_test.dart" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="10" />
     <option name="y" value="29" />
     <option name="width" value="1629" />
@@ -150,10 +170,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -194,6 +210,10 @@
         </subPane>
         <option name="show-excluded-files" value="false" />
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -221,7 +241,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Flutter Test.Initial content generation test">
+  <component name="RunManager" selected="Flutter.main.dart">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -345,39 +365,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Initial_content_generation_test - 2018.07.23 at 16h 50m 24s.xml">
+    <history-entry file="Initial_content_generation_test - 2018.07.24 at 07h 16m 03s.xml">
       <configuration name="Initial content generation test" configurationId="FlutterTestConfigType" />
     </history-entry>
-    <history-entry file="Initial_content_generation_test - 2018.07.23 at 16h 56m 55s.xml">
+    <history-entry file="Initial_content_generation_test - 2018.07.24 at 07h 17m 12s.xml">
       <configuration name="Initial content generation test" configurationId="FlutterTestConfigType" />
     </history-entry>
-    <history-entry file="Initial_content_generation_test - 2018.07.23 at 16h 57m 41s.xml">
+    <history-entry file="Initial_content_generation_test - 2018.07.24 at 07h 19m 10s.xml">
       <configuration name="Initial content generation test" configurationId="FlutterTestConfigType" />
     </history-entry>
-    <history-entry file="Initial_content_generation_test - 2018.07.23 at 17h 12m 23s.xml">
+    <history-entry file="Initial_content_generation_test - 2018.07.24 at 07h 20m 38s.xml">
       <configuration name="Initial content generation test" configurationId="FlutterTestConfigType" />
     </history-entry>
-    <history-entry file="Initial_content_generation_test - 2018.07.23 at 17h 14m 08s.xml">
+    <history-entry file="Initial_content_generation_test - 2018.07.24 at 07h 22m 03s.xml">
       <configuration name="Initial content generation test" configurationId="FlutterTestConfigType" />
     </history-entry>
-    <history-entry file="Initial_content_generation_test - 2018.07.23 at 17h 14m 51s.xml">
+    <history-entry file="Initial_content_generation_test - 2018.07.24 at 07h 22m 30s.xml">
       <configuration name="Initial content generation test" configurationId="FlutterTestConfigType" />
     </history-entry>
-    <history-entry file="Initial_content_generation_test - 2018.07.23 at 21h 39m 08s.xml">
+    <history-entry file="Initial_content_generation_test - 2018.07.24 at 07h 43m 28s.xml">
       <configuration name="Initial content generation test" configurationId="FlutterTestConfigType" />
     </history-entry>
-    <history-entry file="Initial_content_generation_test - 2018.07.23 at 21h 40m 28s.xml">
+    <history-entry file="Initial_content_generation_test - 2018.07.24 at 07h 43m 41s.xml">
       <configuration name="Initial content generation test" configurationId="FlutterTestConfigType" />
     </history-entry>
-    <history-entry file="Initial_content_generation_test - 2018.07.23 at 21h 40m 58s.xml">
+    <history-entry file="Initial_content_generation_test - 2018.07.24 at 07h 43m 51s.xml">
       <configuration name="Initial content generation test" configurationId="FlutterTestConfigType" />
     </history-entry>
-    <history-entry file="Simple_content_generation_test - 2018.07.23 at 16h 49m 57s.xml">
-      <configuration name="Simple content generation test" configurationId="FlutterTestConfigType" />
+    <history-entry file="Initial_content_generation_test - 2018.07.24 at 07h 44m 37s.xml">
+      <configuration name="Initial content generation test" configurationId="FlutterTestConfigType" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="10" y="29" width="1629" height="940" extended-state="0" />
+    <frame x="10" y="29" width="1629" height="940" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -388,7 +408,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Dart Analysis" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13992763" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3248175" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3248175" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Flutter Outline" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296893" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -408,7 +428,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.06790123" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.06690998" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32962963" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -423,14 +443,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../../../flutter/packages/flutter/lib/src/widgets/navigator.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12030">
-          <caret line="815" column="21" lean-forward="false" selection-start-line="815" selection-start-column="21" selection-end-line="815" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/ui/abtab/home_screen.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1800">
@@ -718,13 +730,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pubspec.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="10" column="2" lean-forward="false" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/res/strings.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -813,16 +818,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/content_mgr_test.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="33" column="45" lean-forward="false" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/ui/abtab/home_screen.dart">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1800">
@@ -833,12 +828,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pubspec.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="21" lean-forward="false" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../flutter/bin/cache/pkg/sky_engine/lib/core/list.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4605">
+          <caret line="309" column="10" lean-forward="false" selection-start-line="309" selection-start-column="10" selection-end-line="309" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/domain/content_table_mgr.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="32" column="67" lean-forward="false" selection-start-line="32" selection-start-column="67" selection-end-line="32" selection-end-column="67" />
+        <state relative-caret-position="420">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/content_mgr_test.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>

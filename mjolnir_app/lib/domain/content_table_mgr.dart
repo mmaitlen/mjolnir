@@ -5,10 +5,11 @@ import 'package:mjolnir_app/dataobj/data_obj.dart';
 
 class ContentMgr {
 
+  static RollMgr _rollMgr;
   static Map<String, List<String>> _contentTables = new Map();
   Map<String, ContentGenerationScript> _scriptMap = new Map();
 
-  RollMgr _rollMgr;
+
 
   ContentWrapper generateContent(ContentRequest request) {
     return _scriptMap[request.name].execute();
@@ -25,13 +26,17 @@ class ContentMgr {
     _scriptMap[script.name] = script;
   }
 
-  setRollMgr(RollMgr rollMgr) {
-    this._rollMgr = rollMgr;
+  static setRollMgr(RollMgr rollMgr) {
+    _rollMgr = rollMgr;
   }
 
   static String getContent(String contentType) {
     // TODO: get index from RollMgr so in can be mocked for testing
-    return _contentTables[contentType][1];
+    List<String> contentTable = _contentTables[contentType];
+    int max = contentTable.length - 1;
+    int roll = _rollMgr.roll(0, max);
+    print("ContentTableMgr.getContent type $contentType tbl min $min max $max roll $roll");
+    return contentTable[roll];
   }
 }
 
@@ -80,6 +85,7 @@ class ScriptStep {
 
 class RollMgr {
   int roll(int min, int max) {
+    print("RollMgr.roll min $min max $max");
     Random r = new Random();
     return r.nextInt(max);
   }
