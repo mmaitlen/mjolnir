@@ -7,11 +7,11 @@ class ContentMgr {
 
   static RollMgr _rollMgr;
   static Map<String, List<String>> _contentTables = new Map();
-  Map<String, ContentGenerationScript> _scriptMap = new Map();
+  static Map<String, ContentGenerationScript> _scriptMap = new Map();
 
 
 
-  ContentWrapper generateContent(ContentRequest request) {
+  static ContentWrapper generateContent(ContentRequest request) {
     return _scriptMap[request.name].execute();
   }
 
@@ -26,15 +26,21 @@ class ContentMgr {
     _scriptMap[script.name] = script;
   }
 
+  static getRollMgr() {
+    if (_rollMgr == null) {
+      _rollMgr = RollMgr();
+    }
+    return _rollMgr;
+  }
+
   static setRollMgr(RollMgr rollMgr) {
     _rollMgr = rollMgr;
   }
 
   static String getContent(String contentType) {
-    // TODO: get index from RollMgr so in can be mocked for testing
     List<String> contentTable = _contentTables[contentType];
     int max = contentTable.length - 1;
-    int roll = _rollMgr.roll(0, max);
+    int roll = getRollMgr().roll(0, max);
     print("ContentTableMgr.getContent type $contentType tbl min $min max $max roll $roll");
     return contentTable[roll];
   }

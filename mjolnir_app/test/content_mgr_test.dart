@@ -11,6 +11,9 @@ class MockRollMgr extends Mock implements RollMgr {}
 
 void main() {
 
+  const OBJTYPE_A1 = "a1";  // object type for SCRIPT to create
+  const ATRB1 = "atrb1";  // attribute to fill for STEP
+  const SCRIPT_AAA = "script-aaa";
 
   test('Initial content generation test', () {
     ContentMgr mgr = new ContentMgr();
@@ -25,10 +28,7 @@ void main() {
     contentList.add("ccc");
     mgr.registerContent(CONTENT_XYZ, contentList);
 
-    const OBJTYPE_A1 = "a1";  // object type for SCRIPT to create
-    const ATRB1 = "atrb1";  // attribute to fill for STEP
 
-    const SCRIPT_AAA = "script-aaa";
     ContentGenerationScript script = new ContentGenerationScript(SCRIPT_AAA, OBJTYPE_A1);
     script.addStep(new ScriptStep(CONTENT_XYZ, ATRB1));
     mgr.registerScript(script);
@@ -36,7 +36,7 @@ void main() {
     when(rollMgr.roll(0, 2)).thenReturn(1);
 
     ContentRequest request = new ContentRequest(SCRIPT_AAA);
-    DataObj content = mgr.generateContent(request).content;
+    DataObj content = ContentMgr.generateContent(request).content;
 
     expect(content.getObjType(), OBJTYPE_A1);
     expect(content.getAtrbString(ATRB1), "bbb");
