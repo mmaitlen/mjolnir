@@ -6,16 +6,15 @@ import 'package:mjolnir_app/dataobj/data_obj.dart';
 class ContentMgr {
 
   static RollMgr _rollMgr;
-  static Map<String, List<String>> _contentTables = new Map();
+  static Map<String, List<ContentEntry>> _contentTables = new Map();
   static Map<String, ContentGenerationScript> _scriptMap = new Map();
-
 
 
   static ContentWrapper generateContent(ContentRequest request) {
     return _scriptMap[request.name].execute();
   }
 
-  registerContent(String contentType, List<String> contentList) {
+  registerContent(String contentType, List<ContentEntry> contentList) {
     if (!_contentTables.containsKey(contentType)) {
       _contentTables[contentType] = new List();
     }
@@ -37,15 +36,37 @@ class ContentMgr {
     _rollMgr = rollMgr;
   }
 
-  static String getContent(String contentType) {
-    List<String> contentTable = _contentTables[contentType];
+  static ContentEntry getContent(String contentType) {
+    List<ContentEntry> contentTable = _contentTables[contentType];
+    int min = 0;
     int max = contentTable.length - 1;
-    int roll = getRollMgr().roll(0, max);
+    int roll = getRollMgr().roll(min, max);
     print("ContentTableMgr.getContent type $contentType tbl min $min max $max roll $roll");
     return contentTable[roll];
   }
+
+//  static ContentEntry getWeightedContent(String contentType) {
+//    // TODO: need means to select weighted contennt
+//    List<ContentEntry> contentTable = _contentTables[contentType];
+//    contentTable.forEach((entry) => {
+//
+//    });
+//  }
 }
 
+
+class ContentEntry {
+
+  // TODO: need to have a means to specify rarity table
+  static const WEIGHT_COMMON = "common";
+  static const WEIGHT_RARE = "rare";
+  static const WEIGHT_VERYRARE = "veryrare";
+
+  String value;
+  String weight;
+
+  ContentEntry(this.value);
+}
 
 class ContentRequest {
 
@@ -85,7 +106,8 @@ class ScriptStep {
   ScriptStep(this._contentType, this._atrbName);
 
   executeStep(DataObj dataObj) {
-    dataObj.atrbMap[_atrbName] = ContentMgr.getContent(_contentType);
+    ContentEntry content = ContentMgr.getContent(_contentType);
+    dataObj.atrbMap[_atrbName] = content.value;
   }
 }
 

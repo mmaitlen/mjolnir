@@ -22,10 +22,10 @@ void main() {
     ContentMgr.setRollMgr(rollMgr);
 
     const CONTENT_XYZ = "content-xyz";
-    List<String> contentList = new List();
-    contentList.add("aaa");
-    contentList.add("bbb");
-    contentList.add("ccc");
+    List<ContentEntry> contentList = new List();
+    contentList.add(ContentEntry("aaa"));
+    contentList.add(ContentEntry("bbb"));
+    contentList.add(ContentEntry("ccc"));
     mgr.registerContent(CONTENT_XYZ, contentList);
 
 

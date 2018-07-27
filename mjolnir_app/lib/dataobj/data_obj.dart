@@ -30,4 +30,8 @@ class DataObj {
   String getAtrbString(String atrbKey) {
     return atrbMap[atrbKey].toString();
   }
+
+  bool hasAtrb(String atrbKey) {
+    return atrbMap.containsKey(atrbKey);
+  }
 }
