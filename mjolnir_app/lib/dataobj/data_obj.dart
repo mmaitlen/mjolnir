@@ -19,8 +19,12 @@ class DataObj {
     atrbMap[atrbKey] = value;
   }
 
-  Object getAtrb(String atrbKey) {
-    return atrbMap[atrbKey];
+  Object getAtrb(String atrbKey, {Object defaultValue}) {
+    if (hasAtrb(atrbKey)) {
+      return atrbMap[atrbKey];
+    } else {
+      return defaultValue;
+    }
   }
 
   String getObjType() {
@@ -33,5 +37,13 @@ class DataObj {
 
   bool hasAtrb(String atrbKey) {
     return atrbMap.containsKey(atrbKey);
+  }
+
+  bool isType(String type) {
+    return getAtrbString(ATRB_OBJTYPE) == type;
+  }
+
+  bool isAtrbEqualTo(String atrbKey, String value) {
+    return hasAtrb(atrbKey) && getAtrb(atrbKey) == value;
   }
 }

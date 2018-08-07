@@ -5,10 +5,9 @@ import 'package:mjolnir_app/env/app_mgr.dart';
 class MainScreen extends StatelessWidget {
 
 
-  AppMgr _appMgr;
   String _title;
 
-  MainScreen(this._appMgr, this._title);
+  MainScreen(this._title);
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +17,7 @@ class MainScreen extends StatelessWidget {
         actions: <Widget>[
         ],
       ),
-      body: ContentList(_appMgr.datamgr.getDataList()),
+      body: ContentList(AppMgr.dataMgr().getDataList()),
     );
   }
 

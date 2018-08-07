@@ -1,17 +1,33 @@
 import 'package:mjolnir_app/common_dataobj.dart';
 import 'package:mjolnir_app/env/data_mgr.dart';
 import 'package:flutter/material.dart';
+import 'package:mjolnir_app/env/env.dart';
+import 'package:mjolnir_app/env/screen_mgr.dart';
 import 'package:mjolnir_app/ui/abtab/generate_content_screen.dart';
 
 class AppMgr {
 
-  BuildContext _context;
-  DataMgr datamgr;
+  static Env _env;
 
+  AppMgr();
 
-  AppMgr(this._context, this.datamgr);
+  static setEnv(Env env) {
+    _env = env;
+  }
 
-  evoke(BuildContext context, Action action) {
+  static Manager getManager(String mgrKey) {
+    return _env.getManager(mgrKey);
+  }
+
+  static DataMgr dataMgr() {
+    return getManager(DATA_MGR_KEY);
+  }
+
+  static ScreenMgr screenMgr() {
+    return getManager(SCREEN_MGR_KEY);
+  }
+
+  static evoke(BuildContext context, Action action) {
     String type = action.getAtrbString(Action.ATRB_ACTION_TYPE);
     print('tap type ${type} id ${action.getAtrbString(Action.ATRB_ACTION_TAG)}');
     switch(type) {
@@ -24,17 +40,5 @@ class AppMgr {
   request(Request request) {
 
   }
-
-}
-
-//class Action {
-//  BuildContext context;
-//  String actionId;
-//
-//  Action(this.context, this.actionId);
-//}
-
-
-class Request {
 
 }
